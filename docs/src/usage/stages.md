@@ -30,8 +30,8 @@ def load_image(path):
 def classify(x):
     # [...] lookup the most likely class
     return class
-
-my_classifier_transform = (
+    
+my_classifier = (
     load_image                 # preprocessing ...
     >> transforms.ToTensor()   # 
     >> batch                   # ... stage
